@@ -19,7 +19,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 	private SessionFactory sessionFactory;
 			
 	@Override
-	@Transactional
+	//@Transactional   - obs³uga bêdzie w ServiceLayer:  CusomerServiceImpl
 	public List<Customer> getCustomers() {
 		
 		// get the current hibernate session
